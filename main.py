@@ -5,7 +5,7 @@ class Book:
         self.date = date
 
     def info(self):
-        print(f"El titulo del libro es: {self.title}, del autor: {self.author}, Publicado en el año: {self.date}")
+        print(f" El titulo del libro es: {self.title} - del autor: {self.author} - Publicado en el año: {self.date}")
 
 books = []
 def add_book():
@@ -30,7 +30,7 @@ def print_books():
         print("--Libros Registrados--")
         i = 1
         for book in books:
-            print(f"Libro {i}.", end = "")
+            print(f"Libro {i}:", end = "")
             book.info()
             i += 1
         print()
